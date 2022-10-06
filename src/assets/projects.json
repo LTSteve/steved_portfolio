@@ -1,0 +1,164 @@
+[
+  {
+    "title":"This Very Site",
+    "type":"Dev",
+    "shortDescription":"A journey in getting aquainted with Angular and a real trip down memory lane.",
+    "date":"10/18/2022",
+    "articlePath":"assets/projects/site.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"The Missing Year",
+    "type":"Games|Misc",
+    "shortDescription":"Yea, i got really into fighting games for a while.",
+    "date":"9/1/2022",
+    "articlePath":"assets/projects/lostyear.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Happened"
+  },
+  {
+    "title":"Roboy: Space Janitor",
+    "type":"Dev|Games",
+    "shortDescription":"Guide Roboy in an orbital scrap collection adventure!",
+    "date":"11/11/2021",
+    "articlePath":"assets/projects/roboy.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Extraterrestrial Beasts To Study To",
+    "type":"Music",
+    "shortDescription":"An oddball conglomeration of Techno, Industrial, and Vaporwave influences.",
+    "date":"4/7/2021",
+    "articlePath":"assets/projects/extraterrestrialbeasts.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Highest Flames September",
+    "type":"Music",
+    "shortDescription":"I spent some time under the alias 'dumpsterfireaday' releasing music (almost) daily, this is a collection of my favorites from that time.",
+    "date":"9/22/2020",
+    "articlePath":"assets/projects/highestflames.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Dark Bidding Machine",
+    "type":"Music",
+    "shortDescription":"Generative experiments mixed with atmospheric Industrial tracks.",
+    "date":"8/12/2020",
+    "articlePath":"assets/projects/darkbidding.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Chill Planets",
+    "type":"Dev|Games",
+    "shortDescription":"Messing with n-dimensional perlin noise to create interesting generative little planets.",
+    "date":"4/2/2020",
+    "articlePath":"assets/projects/chillplanets.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Abandoned"
+  },
+  {
+    "title":"Neighborhood Cultist",
+    "type":"Dev|Games",
+    "shortDescription":"You have a job to do. A game made for a week long gamejam, made in 4 days (I forgot the name).",
+    "date":"3/23/2020",
+    "articlePath":"assets/projects/cultist.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Transplant",
+    "type":"Dev|Games",
+    "shortDescription":"They took your arm, unfortunately (for them) they decided to attach a gun. Made for a gamejam in 3 days.",
+    "date":"3/14/2020",
+    "articlePath":"assets/projects/transplant.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"ShoreSweeper",
+    "type":"Dev|Games",
+    "shortDescription":"What if minesweeper took place on procedurally generated islands? Buy ship upgrades and sweep those shores.",
+    "date":"3/12/2020",
+    "articlePath":"assets/projects/shoresweeper.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Abandoned"
+  },
+  {
+    "title":"Skeleland 1-1",
+    "type":"Music",
+    "shortDescription":"My final album to be primarily produced on Reaper. My first to be put on Spotify.",
+    "date":"1/4/2020",
+    "articlePath":"assets/projects/skeleland.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Older Music 2012-2019",
+    "type":"Music|Misc",
+    "shortDescription":"An overview/history of my music journey from damn near the start.",
+    "date":"9/5/2019",
+    "articlePath":"assets/projects/oldermusic.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Happened"
+  },
+  {
+    "title":"WADinator",
+    "type":"Dev|Games",
+    "shortDescription":"A tool for importing the WAD format (doom maps) into the Unity Editor.",
+    "date":"2/26/2018",
+    "articlePath":"assets/projects/wadinator.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Abandoned"
+  },
+  {
+    "title":"Pisgah View Ranch",
+    "type":"Dev",
+    "shortDescription":"A site for a North Carolina ranch.",
+    "date":"1/8/2018",
+    "articlePath":"assets/projects/pisgahview.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Abandoned"
+  },
+  {
+    "title":"HoweAboutPT.com",
+    "type":"Dev",
+    "shortDescription":"A site for a Lansing personal trainer.",
+    "date":"9/7/2017",
+    "articlePath":"assets/projects/howe.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"RobJComedy.com",
+    "type":"Dev",
+    "shortDescription":"A site for a local Lansing comedian.",
+    "date":"12/6/2016",
+    "articlePath":"assets/projects/robj.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Dart internal projects",
+    "type":"Dev",
+    "shortDescription":"Several internal web projects at Dart Container. Mongo, .Net, (Durandal/UI5) stack.",
+    "date":"1/1/2016",
+    "articlePath":"assets/projects/dartinternal.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  },
+  {
+    "title":"Dartcontainer.com",
+    "type":"Dev",
+    "shortDescription":"Dart Container's public website and search features.",
+    "date":"1/1/2015",
+    "articlePath":"assets/projects/dart.md",
+    "imagePath":"assets/projectimg/site.png",
+    "state":"Released"
+  }
+]

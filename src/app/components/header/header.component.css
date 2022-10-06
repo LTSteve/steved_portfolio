@@ -1,0 +1,42 @@
+.logo-spacing
+{
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 150px;
+}
+
+.app-header
+{
+  background-color:#332C23;
+}
+
+ul.filters-container
+{
+  list-style:none;
+  padding:0px;
+  margin:0px;
+  position: absolute;
+  margin-top:-50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+ul.filters-container > li
+{
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin-right:20px;
+}
+
+ul.filters-container > li > button
+{
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #E6E6E9;
+  font-size: 20px;
+  border: 0px;
+  background: none;
+}
