@@ -1,9 +1,3 @@
 <div>
-  <ul>
-    <li data-test="projectDescription" *ngFor="let projectDescription of projectDescriptions$ | async">
-      <div data-test="project">
-        {{ projectDescription.title }}
-      </div>
-    </li>
-  </ul>
+  <router-outlet></router-outlet>
 </div>

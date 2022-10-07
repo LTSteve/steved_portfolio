@@ -1,0 +1,11 @@
+<ul>
+  <li data-test="projectDescription" *ngFor="let projectDescription of projectDescriptions$ | async">
+    <div data-test="project">
+      <a [routerLink]="['/article', { articleName: projectDescription.articleName }]">
+        <img [src]="projectDescription.imagePath" width="200px" height="200px" />
+        <div data-test="title">{{ projectDescription.title }}</div>
+        <div data-test="description">{{ projectDescription.shortDescription }}</div>
+      </a>
+    </div>
+  </li>
+</ul>

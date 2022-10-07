@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { ProjectsService } from '../../services/projects.service';
 
 @Component({
   selector: 'app-body',
@@ -8,13 +6,10 @@ import { ProjectsService } from '../../services/projects.service';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  projectDescriptions$!: Observable<any>;
 
-  constructor(private projectsService: ProjectsService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    //this.projectDescriptions$ = this.httpClient.get<any>('/assets/projects.json');
-    this.projectDescriptions$ = this.projectsService.getProjects$();
   }
 
 }
