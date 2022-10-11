@@ -1,7 +1,8 @@
-<header class="app-header">
+<header class="app-header {{smol ? 'smol' : ''}}">
   <div class="logo-spacing">
     <a routerLink="/" routerLinkActive="active" data-test="logo" class="logo-link">
-      <img src="assets/logo.png" width="640"/>
+      <img src="assets/logo.png" class="beeg-title"/>
+      <img src="assets/projectimg/site.png" class="smol-title" />
     </a>
   </div>
   <ul data-test="filters" class="filters-container">

@@ -7,6 +7,7 @@ import { Router, ActivatedRoute, ParamMap, NavigationStart } from '@angular/rout
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  smol = false;
 
   constructor(private router: Router) { }
 
@@ -17,10 +18,10 @@ export class HeaderComponent implements OnInit {
         const url = event.url;
 
         if(url == "/"){
-          //alert("beeg header");
+          this.smol = false;
         }
         else{
-          //alert("smol header");
+          this.smol = true;
         }
       }
     });

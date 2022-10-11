@@ -1,7 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Vollkorn;
+  src: url(assets/fonts/Vollkorn-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Vollkorn-Italic;
+  src: url(assets/fonts/Vollkorn-Italic-VariableFont_wght.ttf);
+}
+
 html, body{
   margin: 0px;
   padding: 0px;
   background-color: #E6E6E9;
   color: #332C23;
+  font-family: Vollkorn;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+code {
+  font-size: 1.2em;
+  display: block;
+  background-color: #332C23;
+  color: #E6E6E9;
+  padding: 10px;
+
+  width: 45em;
+  overflow-x: scroll;
+}
+
+img.hero-image {
+    position: absolute;
+    top: 200px;
+    height: 800px;
+    left: calc(50% - 800px);
+    width: 1600px;
+}
+
+img.hero-image.mobile-hero {
+    left: calc(50% - 188px);
+    width: 376px;
 }

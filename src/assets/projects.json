@@ -18,12 +18,12 @@
     "state":"Happened"
   },
   {
-    "title":"Roboy: Space Janitor",
+    "title":"Roboy: Robot Janitor",
     "type":"Dev|Games",
     "shortDescription":"Guide Roboy in an orbital scrap collection adventure!",
     "date":"11/11/2021",
     "articleName":"roboy",
-    "imagePath":"assets/projectimg/site.png",
+    "imagePath":"assets/projectimg/roboy_icon.png",
     "state":"Released"
   },
   {

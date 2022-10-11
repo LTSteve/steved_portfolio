@@ -10,3 +10,10 @@ article > .article-body{
   width: 45em;
   text-align: left;
 }
+
+.article-hero {
+    width: 100%;
+    height: 800px;
+    background-color: #488B49;
+    margin-top: -100px;
+}

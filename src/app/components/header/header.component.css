@@ -8,6 +8,39 @@
 .app-header
 {
   background-color:#332C23;
+  height: 420px;
+  transition: height 0.15s ease-in-out;
+}
+
+.app-header.smol
+{
+  height: 200px;
+}
+
+.app-header img.smol-title
+{
+  position:absolute;
+  left: -100px;
+  top: 10px;
+  width: 80px;
+  height: 80px;
+  transition: left 0.075s ease-in-out 0.075s;
+}
+
+.app-header.smol img.smol-title
+{
+  left: 10px;
+}
+
+.app-header img.beeg-title
+{
+  margin-left: 0px;
+  transition: margin-left 0.1s ease-in-out;
+}
+
+.app-header.smol img.beeg-title
+{
+  margin-left: -3000px;
 }
 
 ul.filters-container
@@ -19,6 +52,12 @@ ul.filters-container
   margin-top:-50px;
   margin-left: 100px;
   margin-right: 100px;
+  transition: margion-left 0.2s ease-in-out;
+  margin-left: 100px;
+}
+
+.app-header.smol ul.filters-container{
+  margin-left: -3000px;
 }
 
 ul.filters-container > li
