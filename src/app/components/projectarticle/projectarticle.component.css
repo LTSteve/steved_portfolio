@@ -1,0 +1,12 @@
+article {
+  display: bock;
+  text-align:center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+article > .article-body{
+  display:inline-block;
+  width: 45em;
+  text-align: left;
+}

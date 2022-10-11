@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      if(event instanceof NavigationStart)
+      {
+        const url = event.url;
+
+        if(url == "/"){
+          //alert("beeg header");
+        }
+        else{
+          //alert("smol header");
+        }
+      }
+    });
   }
 
 }

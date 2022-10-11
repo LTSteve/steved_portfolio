@@ -53,4 +53,22 @@ describe('ProjectsService', () => {
 
     expect(httpClient.get).toHaveBeenCalledWith('assets/projects.json');
   });
+
+  it('should return requested markdown file in text format', () => {
+    httpClient = TestBed.get(HttpClient);
+
+    const projectMock = "md";
+    const projectMockName = "name";
+    //const projectPageRequest = { responseType: 'text' };
+
+    spyOn(httpClient, 'get').and.returnValue(of(projectMock));
+
+    projectsService = TestBed.get(ProjectsService);
+    const spy = jasmine.createSpy('spy');
+    projectsService.getProject$(projectMockName).subscribe(spy);
+
+    expect(spy).toHaveBeenCalledWith(projectMock);
+
+    expect(httpClient.get).toHaveBeenCalled();//With(`assets/projects/${projectMockName}.md`, projectPageRequest);
+  });
 });

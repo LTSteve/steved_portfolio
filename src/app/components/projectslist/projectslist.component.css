@@ -1,0 +1,55 @@
+.projects-page {
+  display: bock;
+  text-align:center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+ul.projects-list{
+  display:inline-block;
+  width: 80em;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  list-style:none;
+}
+
+li.project-list-item {
+  display:inline-block;
+  width:40%;
+  border: 12px solid #332C23;
+  background-color: #E6E6E9;
+  border-radius: 8px;
+  margin-bottom: 35px;
+}
+li.project-list-item:nth-child(even){
+  margin-left:10%;
+}
+
+li.project-list-item > a{
+  display: block;
+  text-decoration: none;
+  color: #332C23;
+}
+
+img.project-card-image {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project-card-title{
+  display:inline-block;
+  width: 50%;
+  text-align: right;
+  padding:8px;
+  font-size: 38px;
+}
+
+.project-card-description{
+  display: inline-block;
+  width: 91%;
+  padding:5%;
+  font-size: 23px;
+  background-color: #332C23;
+  color: #E6E6E9;
+}
