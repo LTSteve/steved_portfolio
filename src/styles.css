@@ -46,9 +46,14 @@ img.hero-image {
     height: 800px;
     left: calc(50% - 800px);
     width: 1600px;
+    max-width: none;
 }
 
 img.hero-image.mobile-hero {
     left: calc(50% - 188px);
     width: 376px;
+}
+
+article img {
+  max-width: 720px;
 }
