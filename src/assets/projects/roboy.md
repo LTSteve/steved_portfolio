@@ -5,6 +5,7 @@
 
 **Roboy: Robot Janitor** is an arcade-y, physics-y mobile game. You control the titular Roboy as he traverses orbital space to keep it clean by collecting junk.
 
+You can download the game on an Android device via the [Google Play store](https://play.google.com/store/apps/details?id=com.SteveD.RoboySpaceJanitor&hl=en_US&gl=US).
 Up-to-date source code can be found [here](https://github.com/LTSteve/orbital-cleanup).
 
 ## Tooling
