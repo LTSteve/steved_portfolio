@@ -2,11 +2,11 @@
 
 # Skeleland 1-1
 
-<iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/959560504&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/heedlessnorseman/sets/skeleland-1-1" title="Skeleland 1-1" target="_blank" style="color: #cccccc; text-decoration: none;">Check Out The Album Here</a></div>
+<iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/959560504&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/heedlessnorseman/sets/skeleland-1-1" title="Skeleland 1-1" target="_blank" style="color: #cccccc; text-decoration: none;">Check Out The Album Here</a></div>
 
-A smaller album, this was my final project using [Reaper](https://www.reaper.fm) as my DAW. Or at least I think it was, I've since lost the project files for this album, but I have all of them for *Dark Bidding Machine*.
+A smaller album, this was my final project using [Reaper](https://www.reaper.fm) as my DAW. Or at least I think it was, I've since lost the project files for this album, but I have all of them for [Dark Bidding Machine](/article;articleName=darkbidding).
 
-The focus of this album was to integrate more atmosphere and setting into my style. I think it feels somewhat more professional than my previous works. As an album however it skews a bit experimental.
+The focus of this album was to integrate more atmosphere and setting into my style. I think it feels somewhat more professional than my previous work. As an album however it skews a bit experimental.
 
 ## Track Thoughts
 
