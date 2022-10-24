@@ -90,24 +90,6 @@
     "state":"Released"
   },
   {
-    "title":"Older Music 2012-2019",
-    "type":"Music|Misc",
-    "shortDescription":"An overview/history of my music journey from damn near the start.",
-    "date":"9/5/2019",
-    "articleName":"oldermusic",
-    "imagePath":"assets/projectimg/site.png",
-    "state":"Happened"
-  },
-  {
-    "title":"WADinator",
-    "type":"Dev|Games",
-    "shortDescription":"A tool for importing the WAD format (doom maps) into the Unity Editor.",
-    "date":"2/26/2018",
-    "articleName":"wadinator",
-    "imagePath":"assets/projectimg/site.png",
-    "state":"Abandoned"
-  },
-  {
     "title":"Pisgah View Ranch",
     "type":"Dev",
     "shortDescription":"A site for a North Carolina ranch.",
@@ -126,30 +108,21 @@
     "state":"Released"
   },
   {
-    "title":"RobJComedy.com",
-    "type":"Dev",
-    "shortDescription":"A site for a local Lansing comedian.",
-    "date":"12/6/2016",
-    "articleName":"robj",
-    "imagePath":"assets/projectimg/site.png",
-    "state":"Released"
-  },
-  {
     "title":"Dart internal projects",
     "type":"Dev",
     "shortDescription":"Several internal web projects at Dart Container. Mongo, .Net, (Durandal/UI5) stack.",
     "date":"1/1/2016",
     "articleName":"dartinternal",
-    "imagePath":"assets/projectimg/site.png",
+    "imagePath":"assets/projectimg/dart_icon.png",
     "state":"Released"
   },
   {
-    "title":"Dartcontainer.com",
+    "title":"Dartcontainer.com Rebrand",
     "type":"Dev",
     "shortDescription":"Dart Container's public website and search features.",
     "date":"1/1/2015",
     "articleName":"dart",
-    "imagePath":"assets/projectimg/site.png",
+    "imagePath":"assets/projectimg/dart_icon.png",
     "state":"Released"
   }
 ]
