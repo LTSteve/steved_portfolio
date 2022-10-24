@@ -12,7 +12,7 @@ The site is still up [here](https://dartcontainer.com), but has been constantly 
 CMS: [**Umbraco**](https://umbraco.com)
 Server: **ASP .Net** (Although most of that is handled by Umbraco)
 Templating: **Razor**
-Front End Features: **Javascript**, **HTML**, **CSS**
+Front End Features: **Javascript**, **jQuery**, **HTML**, **CSS**
 Agile Project Management: **TFS** (now known as **Azure DevOps Server**)
 
 ## Devlog
