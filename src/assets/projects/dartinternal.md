@@ -3,11 +3,7 @@
 
 # Dart Container Internal Tools
 
-- After Dartcontainer.com
-- Many new tools to learn, & context for what each of our tools does and who it is for.
-- Durandal and SPAs in general
-- ASP .Net Web APIs
--
+After my time working with the Web Communications team on Dart's public facing website I transitioned to working on the Web Development team's projects. This meant many new tools to learn, and several projects to understand. You can see the list of languages, frameworks, and tools this team used. Most of these were new to me at the time.
 
 ## Tooling
 
@@ -27,4 +23,4 @@ The functionality of the internal projects I worked on at Dart Container include
 - Pulling and displaying up-to-date product pricing
 - Managing salesperson workflow
 
-Although I started out pretty green in terms of full stack Web Development, I picked up what I needed to know of our process fairly quickly.  Beyond learning the technology stack, I also gained valuable insight into working with product owners on an Agile team, and working with a UX design team. Unfortunately there isn't anything I can actually show of this work as the specifics are fairly well protected.
+Although I started out pretty green in terms of full stack Web Development, I picked up what I needed to know of our process fairly quickly.  Beyond learning the technology stack, I also gained valuable insight into working with product owners on an Agile team, and working with a UX design team.
