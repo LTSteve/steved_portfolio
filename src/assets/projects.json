@@ -54,15 +54,6 @@
     "state":"Abandoned"
   },
   {
-    "title":"Neighborhood Cultist",
-    "type":"Dev|Games",
-    "shortDescription":"You have a job to do. A game made for a week long gamejam, made in 4 days (I forgot the name).",
-    "date":"3/23/2020",
-    "articleName":"cultist",
-    "imagePath":"assets/projectimg/site.png",
-    "state":"Released"
-  },
-  {
     "title":"Transplant",
     "type":"Dev|Games",
     "shortDescription":"They took your arm, unfortunately (for them) they decided to attach a gun. Made for a gamejam in 3 days.",
@@ -70,15 +61,6 @@
     "articleName":"transplant",
     "imagePath":"assets/projectimg/transplant_icon.png",
     "state":"Released"
-  },
-  {
-    "title":"ShoreSweeper",
-    "type":"Dev|Games",
-    "shortDescription":"What if minesweeper took place on procedurally generated islands? Buy ship upgrades and sweep those shores.",
-    "date":"3/12/2020",
-    "articleName":"shoresweeper",
-    "imagePath":"assets/projectimg/site.png",
-    "state":"Abandoned"
   },
   {
     "title":"Skeleland 1-1",
@@ -90,21 +72,12 @@
     "state":"Released"
   },
   {
-    "title":"Pisgah View Ranch",
-    "type":"Dev",
-    "shortDescription":"A site for a North Carolina ranch.",
-    "date":"1/8/2018",
-    "articleName":"pisgahview",
-    "imagePath":"assets/projectimg/site.png",
-    "state":"Abandoned"
-  },
-  {
     "title":"HoweAboutPT.com",
     "type":"Dev",
     "shortDescription":"A site for a Lansing personal trainer.",
     "date":"9/7/2017",
     "articleName":"howe",
-    "imagePath":"assets/projectimg/site.png",
+    "imagePath":"assets/projectimg/howe_icon.png",
     "state":"Released"
   },
   {

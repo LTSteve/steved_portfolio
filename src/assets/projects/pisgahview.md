@@ -1,22 +1,45 @@
-<img src="assets/projectimg/roboy_title.png" alt="Roboy: Robot Janitor" class="hero-image mobile-hero" />
+<img src="assets/projectimg/pisgah_title.png" alt="PisgahViewRanch.com" class="hero-image" />
 
-# Roboy: Robot Janitor
+# PisgahViewRanch&#46;com
 
-Up-to-date source code can be found [here](https://github.com/LTSteve/orbital-cleanup).
+Pisgah View Ranch was a family-owned b&b and horseriding spot in North Carolina. We designed and developed a website for Pisgah View Ranch in 2018, unfortunately talks to sell the land put a stop to the project just as we were preparing to launch. Now, the ranch is part of the Pisgah View National Park.
+
+![History Page](assets/projectimg/pisgah2.png)
+
+Source code can be found [here](https://github.com/LTSteve/pisgah).
 
 ## Tooling
 
-Engine: [**Unity**](https://unity.com)
-Sound Effects: [**BFXR**](https://www.bfxr.net)
-Soundtrack: [**Bitwig**](https://www.bitwig.com)
-Art: [**Procreate**](https://procreate.art/ipad) with touchups in [**GIMP**](https://www.gimp.org)
-
-## Context
+Languages: **HTML**, **Javascript**, **Node**, **CSS**
+CSS Framework: [**Bootstrap**](https://getbootstrap.com/docs/3.4/)
+Javascript Frameworks: [**KnockoutJS**](https://knockoutjs.com)
+CMS: [**CushyCMS**](https://www.cushycms.com/en)
+Hosting: [**Digital Ocean**](https://www.digitalocean.com)
 
 ## Process
 
+- Discovery
+- UX Design
+- Iteration
+- Iteration
+
+## Major Features
+
+- CushyCMS integration
+- Sortable list of available cabins with features listed
+
+![Cabins List](assets/projectimg/pisgah3.png)
+
+- Image viewer with cushy integration
+
+![Cabins Image Viewer](assets/projectimg/pisgah4.png)
+
 ## What Went Well
+
+- Fairly simple project with fairly simple code
+- The turn around time was good
 
 ## What Didn't Go Well
 
-## What's Next
+- CushyCMS is a blessing and a curse
+- Distance and shoddy internet connection made feedback difficult

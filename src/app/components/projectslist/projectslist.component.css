@@ -17,11 +17,13 @@ ul.projects-list{
 li.project-list-item {
   display:inline-block;
   width:40%;
+  height: calc(475px - 24px);
   border: 12px solid #332C23;
   background-color: #E6E6E9;
   border-radius: 8px;
   margin-bottom: 35px;
 }
+
 li.project-list-item:nth-child(even){
   margin-left:10%;
 }
@@ -42,7 +44,9 @@ img.project-card-image {
   width: 50%;
   text-align: right;
   padding:8px;
+  padding-top: 20px;
   font-size: 38px;
+  height: calc(200px - 36px);
 }
 
 .project-card-description{
@@ -52,4 +56,5 @@ img.project-card-image {
   font-size: 23px;
   background-color: #332C23;
   color: #E6E6E9;
+  height: 200px;
 }
