@@ -68,7 +68,7 @@ ul.filters-container > li
   margin-right:20px;
 }
 
-ul.filters-container > li > button
+ul.filters-container > li > a
 {
   display:inline-block;
   width: 100%;
@@ -78,4 +78,5 @@ ul.filters-container > li > button
   font-size: 20px;
   border: 0px;
   background: none;
+  text-decoration: none;
 }

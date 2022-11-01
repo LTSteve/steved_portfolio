@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap, NavigationStart } from '@angular/router';
+import { Router, ActivatedRoute, ParamMap, EventType } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -13,9 +13,13 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
-      if(event instanceof NavigationStart)
+      if('type' in event && event.type == EventType.NavigationStart)
       {
-        const url = event.url;
+        let url = event.url;
+
+        if(url.includes(';')){
+          url = url.split(';')[0];
+        }
 
         if(url == "/"){
           this.smol = false;
