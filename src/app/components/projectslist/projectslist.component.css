@@ -22,7 +22,7 @@ li.project-list-item {
   margin-bottom:34px;
   height: calc(475px - 24px);
   border: 12px solid #332C23;
-  background-color: #E6E6E9;
+  background-color: #332C23;
   border-radius: 8px;
 }
 
@@ -48,7 +48,8 @@ img.project-card-image {
   padding:8px;
   padding-top: 20px;
   font-size: 38px;
-  height: calc(200px - 36px);
+  height: calc(200px - 28px);
+  background-color: #E6E6E9;
 }
 .project-card-title>span{
   display: flex;

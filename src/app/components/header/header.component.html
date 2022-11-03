@@ -1,12 +1,12 @@
 <header class="app-header {{smol ? 'smol' : ''}}">
   <div class="logo-spacing">
     <a routerLink="/" routerLinkActive="active" data-test="logo" class="logo-link">
-      <img src="assets/logo.png" class="beeg-title"/>
-      <img src="assets/projectimg/site.png" class="smol-title" />
+      <img src="assets/website_title.png" class="beeg-title"/>
+      <img src="assets/website_logo.png" class="smol-title" />
     </a>
   </div>
   <ul data-test="filters" class="filters-container">
-    <li><a routerLink="/" routerLinkActive="active" >All</a></li>
+    <li class="highlighted"><a routerLink="/" routerLinkActive="active" >All</a></li>
     <li><a routerLink="/;filter=Dev" routerLinkActive="active" >Dev</a></li>
     <li><a routerLink="/;filter=Music" routerLinkActive="active" >Music</a></li>
     <li><a routerLink="/;filter=Games" routerLinkActive="active" >Games</a></li>
