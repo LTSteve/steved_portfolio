@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap, EventType } from '@angular/router';
+import { Router, ActivatedRoute, ParamMap, EventType, DefaultUrlSerializer, UrlTree, Params } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,21 +8,17 @@ import { Router, ActivatedRoute, ParamMap, EventType } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   smol = false;
+  currentFilter = '';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
-      if('type' in event && event.type == EventType.NavigationStart)
+      if('type' in event && event.type == EventType.ActivationEnd)
       {
-        let url = event.url;
-
-        if(url.includes(';')){
-          url = url.split(';')[0];
-        }
-
-        if(url == "/"){
+        if(event.snapshot.url[0].path == 'home' || event.snapshot.url[0].path == ''){
           this.smol = false;
+          this.currentFilter = event.snapshot.params['filter'] || '';
         }
         else{
           this.smol = true;
@@ -30,5 +26,4 @@ export class HeaderComponent implements OnInit {
       }
     });
   }
-
 }

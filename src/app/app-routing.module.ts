@@ -4,8 +4,9 @@ import { ProjectslistComponent } from './components/projectslist/projectslist.co
 import { ProjectarticleComponent } from './components/projectarticle/projectarticle.component';
 
 export const routes: Routes = [
-  { path: '', component: ProjectslistComponent },
-  { path: '**', component: ProjectarticleComponent }
+  { path: 'home', component: ProjectslistComponent },
+  { path: 'article', component: ProjectarticleComponent },
+  { path: '**', component: ProjectslistComponent }
 ];
 
 @NgModule({

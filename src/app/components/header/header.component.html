@@ -6,10 +6,10 @@
     </a>
   </div>
   <ul data-test="filters" class="filters-container">
-    <li class="highlighted"><a routerLink="/" routerLinkActive="active" >All</a></li>
-    <li><a routerLink="/;filter=Dev" routerLinkActive="active" >Dev</a></li>
-    <li><a routerLink="/;filter=Music" routerLinkActive="active" >Music</a></li>
-    <li><a routerLink="/;filter=Games" routerLinkActive="active" >Games</a></li>
-    <li><a routerLink="/;filter=Misc" routerLinkActive="active" >Misc</a></li>
+    <li class="{{currentFilter == '' ? 'highlighted' : ''}}"><a [routerLink]="['/home']" routerLinkActive="active" >All</a></li>
+    <li class="{{currentFilter == 'Dev' ? 'highlighted' : ''}}"><a [routerLink]="['/home', { filter: 'Dev' }]" routerLinkActive="active" >Dev</a></li>
+    <li class="{{currentFilter == 'Music' ? 'highlighted' : ''}}"><a [routerLink]="['/home', { filter: 'Music' }]" routerLinkActive="active" >Music</a></li>
+    <li class="{{currentFilter == 'Games' ? 'highlighted' : ''}}"><a [routerLink]="['/home', { filter: 'Games' }]" routerLinkActive="active" >Games</a></li>
+    <li class="{{currentFilter == 'Misc' ? 'highlighted' : ''}}"><a [routerLink]="['/home', { filter: 'Misc' }]" routerLinkActive="active" >Misc</a></li>
   </ul>
 </header>

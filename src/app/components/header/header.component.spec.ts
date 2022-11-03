@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Router, NavigationStart, EventType } from '@angular/router';
+import { Router, ActivationEnd, ActivatedRouteSnapshot, EventType, ActivatedRoute, UrlSegmentGroup, Params, Data, ResolveData, UrlSegment } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { spyOnClass } from 'jasmine-es6-spies';
 import { of, Observable } from 'rxjs';
@@ -10,16 +10,27 @@ describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
   let router: Router;
-  let navStart: NavigationStart = new NavigationStart(0, "/");
+  let route: ActivatedRoute;
+
+  let activationEndSnapshot = new ActivatedRouteSnapshot();
+  let activationEnd: ActivationEnd = new ActivationEnd(activationEndSnapshot);
+  let params = {'filter':''};
 
   class MockRouter {
-    public events = of(navStart);
+    public events = of(activationEnd);
+  }
+
+  class MockActivatedRoute {
+    public queryParams = of(params);
   }
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ HeaderComponent ],
-      providers: [ {provide: Router, useClass: MockRouter} ]
+      providers: [
+        {provide: ActivatedRoute, useClass: MockActivatedRoute},
+        {provide: Router, useClass: MockRouter}
+      ]
     })
     .compileComponents();
 
@@ -27,6 +38,7 @@ describe('HeaderComponent', () => {
     component = fixture.componentInstance;
 
     router = TestBed.inject(Router);
+    route = TestBed.inject(ActivatedRoute);
 
     fixture.detectChanges();
   });
@@ -44,17 +56,17 @@ describe('HeaderComponent', () => {
   });
 
   it('should not enter smol mode when not reading an article', () => {
-    navStart.url = "/;filter=Dev";
+    activationEndSnapshot.url = [new UrlSegment('home', {'filter': 'Dev'})];
+    activationEndSnapshot.params = {'filter': 'Dev'};
 
     component.ngOnInit();
-
-    fixture.detectChanges();
 
     expect(component.smol).toBe(false);
   });
 
   it('should enter smol mode when reading an article', () => {
-    navStart.url = "/article";
+    activationEndSnapshot.url = [new UrlSegment('article', {})];
+    activationEndSnapshot.params = {};
 
     component.ngOnInit();
 
@@ -62,9 +74,12 @@ describe('HeaderComponent', () => {
   });
 
   it('should highlight based on current filter', () => {
-    navStart.url = "/;filter=Dev";
+    activationEndSnapshot.url = [new UrlSegment('home', {'filter': 'Dev'})];
+    activationEndSnapshot.params = {'filter': 'Dev'};
 
     component.ngOnInit();
+
+    fixture.detectChanges();
 
     expect(fixture.nativeElement.querySelector('[data-test="filters"]').childNodes[1].className).toBe("highlighted");
   });

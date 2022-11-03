@@ -57,6 +57,7 @@ ul.filters-container
   transition: left 0.2s ease-in-out;
   top: 360px;
   left: calc(50% - 40em);
+  user-select: none;
 }
 
 .app-header.smol ul.filters-container{

@@ -1,4 +1,4 @@
-<img src="assets/projectimg/site_title.png" alt="This very site" class="hero-image" />
+<img src="assets/website_logo.png" alt="This very site" class="hero-image" />
 
 # This Very Site!
 
@@ -28,4 +28,4 @@ Hosting: [**Digital Ocean**](https://www.digitalocean.com)
 
 ## What Didn't Go Well
 
-- 
+-
