@@ -2,17 +2,25 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
 
+import { spyOnClass } from 'jasmine-es6-spies';
+import { ToastrService } from 'ngx-toastr';
+
 describe('FooterComponent', () => {
   let component: FooterComponent;
   let fixture: ComponentFixture<FooterComponent>;
+  let toastr: ToastrService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
+      declarations: [ FooterComponent ],
+      providers: [
+        { provide: ToastrService, useFactory: () => spyOnClass(ToastrService) }
+      ]
     })
     .compileComponents();
 
     fixture = TestBed.createComponent(FooterComponent);
+    toastr = TestBed.inject(ToastrService);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -27,10 +35,6 @@ describe('FooterComponent', () => {
 
   it('should show email', () => {
     expect(fixture.nativeElement.querySelector('[data-test="myemail"]')).toBeTruthy();
-  });
-
-  it('should copy email on click', () => {
-
   });
 
   it('should show portfolio link', () => {

@@ -15,6 +15,6 @@ export class FooterComponent implements OnInit {
 
   copyToClipboard(toCopy:string){
     navigator.clipboard.writeText(toCopy);
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    this.toastr.success('Email Copied To Clipboard');
   }
 }
