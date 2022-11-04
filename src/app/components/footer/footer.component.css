@@ -1,0 +1,49 @@
+footer {
+  padding: 50px calc(50% - 40em);
+  margin: 0px;
+  background-color: #332C23;
+  display:flex;
+}
+
+.footer-box {
+  flex: 1;
+}
+.footer-box + .footer-box{
+  text-align: right;
+}
+
+.footer-name {
+  font-size: 26px;
+  color: #E6E6E9;
+  display:block;
+}
+
+button.footer-email {
+  background: none;
+  border: none;
+  color: #E6E6E9;
+  font-size: 18px;
+  padding: 0px;
+  text-decoration: underline;
+  display:block;
+  user-select: none;
+}
+
+a.resume-download {
+  background: #E6E6E9;
+  border: none;
+  color: #332C23;
+  font-size: 18px;
+  padding: 10px 12px;
+  margin-top:10px;
+  margin-bottom:20px;
+  text-decoration: none;
+  display:inline-block;
+  user-select: none;
+}
+
+a.social-link {
+    display: block;
+    margin: 8px 0px;
+    user-select: none;
+}

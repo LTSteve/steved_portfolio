@@ -14,7 +14,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
-      if('type' in event && event.type == EventType.ActivationEnd)
+      if('type' in event && event.type == EventType.ActivationEnd
+        && event.snapshot.url[0])
       {
         if(event.snapshot.url[0].path == 'home' || event.snapshot.url[0].path == ''){
           this.smol = false;
