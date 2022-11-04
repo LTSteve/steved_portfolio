@@ -14,10 +14,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
-      if('type' in event && event.type == EventType.ActivationEnd
-        && event.snapshot.url[0])
+      if('type' in event && event.type == EventType.ActivationEnd)
       {
-        if(event.snapshot.url[0].path == 'home' || event.snapshot.url[0].path == ''){
+        if(!event.snapshot.url[0] || event.snapshot.url[0].path == 'home' || event.snapshot.url[0].path == ''){
           this.smol = false;
           this.currentFilter = event.snapshot.params['filter'] || '';
         }

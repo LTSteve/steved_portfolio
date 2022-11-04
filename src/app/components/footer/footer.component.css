@@ -27,6 +27,7 @@ button.footer-email {
   text-decoration: underline;
   display:block;
   user-select: none;
+  cursor: pointer;
 }
 
 a.resume-download {
