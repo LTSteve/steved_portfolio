@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap, EventType, DefaultUrlSerializer, UrlTree, Params } from '@angular/router';
+import { Router, ParamMap, EventType, DefaultUrlSerializer, UrlTree, Params } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   smol = false;
   currentFilter = '';
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {

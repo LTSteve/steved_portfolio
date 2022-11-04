@@ -15,6 +15,7 @@ ul.projects-list{
   margin: 0px;
   margin-left: calc(50% - 40em);
   list-style:none;
+  min-height: 1000px;
 }
 
 li.project-list-item {
@@ -68,4 +69,12 @@ img.project-card-image {
   background-color: #332C23;
   color: #E6E6E9;
   height: 200px;
+}
+
+.ope {
+  position: absolute;
+  top: 500px;
+  width: 99%;
+  text-align: center;
+  font-size: 80px;
 }

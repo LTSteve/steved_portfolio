@@ -30,7 +30,6 @@ export class ProjectarticleComponent implements OnInit {
 
   renderMarkdown(md: string) {
     this.articleHTML = marked.parse(md);
-    console.log(this.articleHTML);
   }
 
 }

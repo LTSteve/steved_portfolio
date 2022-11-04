@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Router, ActivationEnd, ActivatedRouteSnapshot, EventType, ActivatedRoute, UrlSegmentGroup, Params, Data, ResolveData, UrlSegment } from '@angular/router';
+import { Router, ActivatedRouteSnapshot, EventType, ActivatedRoute, UrlSegmentGroup, Params, Data, ResolveData, UrlSegment, ActivationEnd } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { spyOnClass } from 'jasmine-es6-spies';
 import { of, Observable } from 'rxjs';
@@ -10,25 +10,18 @@ describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
   let router: Router;
-  let route: ActivatedRoute;
 
   let activationEndSnapshot = new ActivatedRouteSnapshot();
   let activationEnd: ActivationEnd = new ActivationEnd(activationEndSnapshot);
-  let params = {'filter':''};
 
   class MockRouter {
     public events = of(activationEnd);
-  }
-
-  class MockActivatedRoute {
-    public queryParams = of(params);
   }
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ HeaderComponent ],
       providers: [
-        {provide: ActivatedRoute, useClass: MockActivatedRoute},
         {provide: Router, useClass: MockRouter}
       ]
     })
@@ -38,7 +31,6 @@ describe('HeaderComponent', () => {
     component = fixture.componentInstance;
 
     router = TestBed.inject(Router);
-    route = TestBed.inject(ActivatedRoute);
 
     fixture.detectChanges();
   });

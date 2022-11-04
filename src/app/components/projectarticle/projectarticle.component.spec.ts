@@ -30,7 +30,7 @@ describe('ProjectarticleComponent', () => {
     component = fixture.componentInstance;
 
     projectsService = TestBed.get(ProjectsService);
-    route = TestBed.get(ActivatedRoute);
+    route = TestBed.inject(ActivatedRoute);
 
     route.params = of({'articleName':mockProjectName});
     projectsService.getProject$.and.returnValue(of(mockMarkdown));
