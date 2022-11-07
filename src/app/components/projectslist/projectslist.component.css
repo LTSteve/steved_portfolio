@@ -23,7 +23,7 @@ li.project-list-item {
   margin-bottom:34px;
   height: calc(475px - 24px);
   border: 12px solid #332C23;
-  background-color: #332C23;
+  background-color: #E6E6E9;
   border-radius: 8px;
 }
 
@@ -36,6 +36,7 @@ li.project-list-item > a{
   text-decoration: none;
   color: #332C23;
   user-select: none;
+  margin: -1px;
 }
 
 img.project-card-image {
@@ -51,7 +52,8 @@ img.project-card-image {
   padding-top: 20px;
   font-size: 38px;
   height: calc(200px - 28px);
-  background-color: #E6E6E9;
+  background-color: #332C23;
+  color: #E6E6E9;
 }
 .project-card-title>span{
   display: flex;
@@ -61,14 +63,22 @@ img.project-card-image {
   text-align: center;
 }
 
+.project-card-body {
+  display: flex;
+}
+
 .project-card-description{
-  display: inline-block;
-  width: 91%;
-  padding:5%;
+  width: 55%;
+  padding: 5%;
   font-size: 23px;
-  background-color: #332C23;
-  color: #E6E6E9;
-  height: 200px;
+  background-color: #E6E6E9;
+  color: #332C23;
+  max-height: 200px;
+}
+
+img.project-status-badge {
+  margin-top: 140px;
+  margin-left: 70px;
 }
 
 .ope {

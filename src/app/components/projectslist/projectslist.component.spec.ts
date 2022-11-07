@@ -89,7 +89,7 @@ describe('ProjectslistComponent', () => {
         "date":"11/11/2021",
         "articlePath":"assets/projects/roboy.md",
         "imagePath":"assets/projectimg/site.png",
-        "state":"Released"
+        "state":"In Progress"
       },
       {
         "title":"Roboy: Space Janitor",
@@ -98,7 +98,7 @@ describe('ProjectslistComponent', () => {
         "date":"11/11/2021",
         "articlePath":"assets/projects/roboy.md",
         "imagePath":"assets/projectimg/site.png",
-        "state":"Released"
+        "state":"Completed"
       }
     ]));
 
@@ -145,5 +145,15 @@ describe('ProjectslistComponent', () => {
       fixture.detectChanges();
 
       expect(projectsService.getProjectsFiltered$).toHaveBeenCalled();
+  });
+
+  it('should display one project status badge', async () => {
+    component.ngOnInit();
+
+    fixture.whenStable().then(() => {
+      fixture.detectChanges();
+      const project = fixture.nativeElement.querySelector('[data-test="project"]');
+      expect(project.querySelectorAll('[data-test="badge"]').length).toBe(1);
+    });
   });
 });
