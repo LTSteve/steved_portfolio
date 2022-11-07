@@ -6,15 +6,17 @@
         <div class="project-card-title" data-test="title"><span>{{ projectDescription.title }}</span></div>
         <div class="project-card-body">
           <div class="project-card-description" data-test="description">{{ projectDescription.shortDescription }}</div>
-          <img *ngIf="projectDescription.state == 'Released'"
-            data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/project_completed_icon.png" alt="Released" />
-          <img *ngIf="projectDescription.state == 'Abandoned'"
-            data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/project_abandoned_icon.png" alt="Abandoned" />
-          <img *ngIf="projectDescription.state == 'In Progress'"
-            data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/project_in_progress_icon.png" alt="In Progress" />
-          <img
-            *ngIf="projectDescription.state != 'Released' && projectDescription.state != 'Abandoned' && projectDescription.state != 'In Progress'"
-            data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/empty_project_icon.png" alt="no status" />
+          <div class="project-status-badge-container">
+            <img *ngIf="projectDescription.state == 'Released'"
+              data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/project_completed_icon.png" alt="Released" />
+            <img *ngIf="projectDescription.state == 'Abandoned'"
+              data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/project_abandoned_icon.png" alt="Abandoned" />
+            <img *ngIf="projectDescription.state == 'In Progress'"
+              data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/project_in_progress_icon.png" alt="In Progress" />
+            <img
+              *ngIf="projectDescription.state != 'Released' && projectDescription.state != 'Abandoned' && projectDescription.state != 'In Progress'"
+              data-test="badge" width="100px" height="100px" class="project-status-badge" src="assets/empty_project_icon.png" alt="no status" />
+          </div>
         </div>
       </a>
     </li>

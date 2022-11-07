@@ -98,3 +98,56 @@ ul.filters-container > li.highlighted > a
 {
   color: #332C23;
 }
+
+
+/*Mobile*/
+@media (max-width: 800px) {
+
+  ul.filters-container
+  {
+    top: 380px;
+    left: 10px;
+  }
+  ul.filters-container > li
+  {
+    width: unset;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 40px;
+    margin-right: 0px;
+    line-height: 40px;
+  }
+  ul.filters-container > li > a
+  {
+    font-size: 15px;
+  }
+
+  .logo-spacing > a{
+    margin-left: 0px;
+  }
+  .app-header img.smol-title
+  {
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+  }
+  .app-header.smol img.smol-title
+  {
+    left: calc(50% - 40px);
+    top: calc(20% - 40px);
+  }
+
+  .app-header img.beeg-title
+  {
+    margin-left: -3000px;
+  }
+}
+/*Midrange*/
+@media (min-width: 801px) and (max-width: 1330px) {
+  .logo-spacing > a{
+    margin-left: 0px;
+  }
+  ul.filters-container
+  {
+    left: 50px;
+  }
+}

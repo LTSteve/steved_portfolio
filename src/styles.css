@@ -57,3 +57,48 @@ img.hero-image.mobile-hero {
 article img {
   max-width: 720px;
 }
+
+/*Mobile*/
+@media (max-width: 800px) {
+  img.hero-image {
+      left: calc(50% - 150px);
+      height: 150px;
+      width: 300px;
+  }
+
+  img.hero-image.mobile-hero {
+      left: calc(50% - 150px);
+      width: 376px;
+  }
+
+  article img {
+    max-width: 300px;
+  }
+}
+/*Midrange*/
+@media (min-width: 801px) and (max-width: 1330px) {
+  img.hero-image {
+      left: calc(50% - 400px);
+      height: 400px;
+      width: 800px;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1331px) and (max-width: 1600px) {
+  img.hero-image {
+      height: 665px;
+      left: calc(50% - 665px);
+      width: 1330px;
+  }
+}
+
+/*XL*/
+@media (min-width:1600px) {
+
+  img.hero-image {
+      height: 800px;
+      left: calc(50% - 800px);
+      width: 1600px;
+  }
+}

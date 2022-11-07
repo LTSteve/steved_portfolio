@@ -1,5 +1,5 @@
 footer {
-  padding: 50px calc(50% - 40em);
+  padding: 50px 50px;
   margin: 0px;
   background-color: #332C23;
   display:flex;
@@ -47,4 +47,37 @@ a.social-link {
     display: block;
     margin: 8px 0px;
     user-select: none;
+}
+
+/*Mobile*/
+@media (max-width: 800px) {
+  .footer-box {
+    padding-left:50px;
+  }
+  .footer-box+.footer-box{
+    padding-left: 0px;
+    padding-right: 50px;
+  }
+  footer {
+    padding: 40px 0px;
+  }
+  .footer-name {
+    font-size: 22px;
+    color: #E6E6E9;
+    display:block;
+  }
+
+  button.footer-email {
+    font-size: 15px;
+  }
+}
+/*Midrange*/
+@media (min-width: 801px) and (max-width: 1330px) {
+  .footer-box {
+    padding-left:50px;
+  }
+  .footer-box+.footer-box{
+    padding-left: 0px;
+    padding-right: 50px;
+  }
 }

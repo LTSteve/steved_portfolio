@@ -17,3 +17,40 @@ article > .article-body{
     background-color: #6BA16C;
     margin-top: -100px;
 }
+
+
+/*Mobile*/
+@media (max-width: 800px) {
+  article > .article-body{
+    width: calc(100% - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .article-hero {
+      height: 150px;
+  }
+}
+/*Midrange*/
+@media (min-width: 801px) and (max-width: 1330px) {
+  article > .article-body{
+    width: 40em;
+  }
+
+  .article-hero {
+      height: 400px;
+  }
+}
+/*Desktop*/
+@media (min-width: 1331px) and (max-width: 1600px) {
+  .article-hero {
+      height: 665px;
+  }
+}
+
+/*XL*/
+@media (min-width:1600px) {
+  .article-hero {
+      height: 800px;
+  }
+}

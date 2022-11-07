@@ -27,10 +27,6 @@ li.project-list-item {
   border-radius: 8px;
 }
 
-li.project-list-item:nth-child(even){
-  /*margin-left:120px;*/
-}
-
 li.project-list-item > a{
   display: block;
   text-decoration: none;
@@ -65,20 +61,31 @@ img.project-card-image {
 
 .project-card-body {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: flex-start;
+  gap: 0px;
+  padding: 5%;
 }
 
 .project-card-description{
-  width: 55%;
-  padding: 5%;
+  width: 80%;
   font-size: 23px;
   background-color: #E6E6E9;
   color: #332C23;
   max-height: 200px;
 }
 
+.project-status-badge-container{
+  width: 20%;
+  max-height: 200px;
+}
+
 img.project-status-badge {
-  margin-top: 140px;
-  margin-left: 70px;
+  margin-top: 115px;
+  margin-left: 15px;
 }
 
 .ope {
@@ -87,4 +94,62 @@ img.project-status-badge {
   width: 99%;
   text-align: center;
   font-size: 80px;
+}
+
+/*Mobile*/
+@media (max-width: 800px) {
+
+  img.project-card-image {
+    width: 100px;
+    height: 100px;
+  }
+  .project-card-title{
+    width: calc(100% - 100px - 16px);
+    padding:8px;
+    padding-top: 20px;
+    font-size: 20px;
+    height: calc(100px - 28px);
+  }
+
+  .project-card-body {
+    display: flex;
+  }
+
+  .project-card-description{
+    width: 70%;
+    font-size: 18px;
+    max-height: 200px;
+  }
+
+  .project-status-badge-container{
+    width: 30%;
+  }
+
+  img.project-status-badge {
+    margin-top: 115px;
+    margin-left: -5px;
+  }
+
+  ul.projects-list{
+    display:block;
+    width: 280px;
+    margin-left: calc(50% - 140px);
+  }
+
+  li.project-list-item {
+    width: 100%;
+    height: 335px;
+  }
+}
+/*Midrange*/
+@media (min-width: 801px) and (max-width: 1330px) {
+  ul.projects-list{
+    display:block;
+    width: 40em;
+    margin-left: calc(50% - 20em);
+  }
+
+  li.project-list-item {
+    width: 100%;
+  }
 }
