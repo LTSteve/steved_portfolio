@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ProjectsService } from '../../services/projects.service';
 import { marked } from 'marked';
 
@@ -11,9 +12,9 @@ import { marked } from 'marked';
 export class ProjectarticleComponent implements OnInit {
   articleName = '';
   articleMarkdown = '';
-  articleHTML = '';
+  articleHTML: SafeHtml = '';
 
-  constructor(private route: ActivatedRoute, private projectsService: ProjectsService) { }
+  constructor(private route: ActivatedRoute, private projectsService: ProjectsService, private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -29,7 +30,8 @@ export class ProjectarticleComponent implements OnInit {
   }
 
   renderMarkdown(md: string) {
-    this.articleHTML = marked.parse(md);
+    let innerHTML = marked.parse(md, {"sanitize": false});
+    this.articleHTML = this.sanitizer.bypassSecurityTrustHtml(innerHTML);
   }
 
 }
