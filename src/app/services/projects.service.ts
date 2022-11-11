@@ -8,22 +8,25 @@ import { Observable } from 'rxjs';
 export class ProjectsService {
   httpClient;
 
+  projectsCache: Observable<any> = new Observable<any>();
+  projectsCached = false;
+
   constructor(private http: HttpClient) {
     this.httpClient = http;
   }
 
   getProjects$() {
-    return this.httpClient.get<any>('assets/projects.json');
+    return this._getCachedProjects();
   }
 
   getProjectsFiltered$(filter: string){
     if(!filter) return this.getProjects$();
 
-    let projects = this.httpClient.get<any>('assets/projects.json');
+    let projects = this._getCachedProjects();
 
     return new Observable((subscriber) => {
       projects.subscribe({
-        next(projectList) {
+        next(projectList: any) {
           for(var i = projectList.length-1; i >= 0; i --){
             let project = projectList[i];
             if(!project.type.includes(filter)){
@@ -32,7 +35,7 @@ export class ProjectsService {
           }
           subscriber.next(projectList);
         },
-        error(err){
+        error(err: any){
           subscriber.error(err);
         },
         complete(){
@@ -44,5 +47,16 @@ export class ProjectsService {
 
   getProject$(name: string) {
     return this.httpClient.get(`assets/projects/${name}.md`, { responseType: 'text' });
+  }
+
+  private _getCachedProjects() {
+    if(this.projectsCached){
+      return this.projectsCache;
+    }
+    else{
+      this.projectsCache = this.httpClient.get<any>('assets/projects.json');
+      this.projectsCached = true;
+      return this.projectsCache;
+    }
   }
 }
