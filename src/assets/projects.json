@@ -79,23 +79,5 @@
     "articleName":"howe",
     "imagePath":"assets/projectimg/howe_icon.png",
     "state":"Released"
-  },
-  {
-    "title":"Dart internal projects",
-    "type":"Dev",
-    "shortDescription":"Several internal web projects at Dart Container. Mongo, .Net, (Durandal/UI5) stack.",
-    "date":"1/1/2016",
-    "articleName":"dartinternal",
-    "imagePath":"assets/projectimg/dart_icon.png",
-    "state":"Released"
-  },
-  {
-    "title":"Dartcontainer.com Rebrand",
-    "type":"Dev",
-    "shortDescription":"Dart Container's public website and search features.",
-    "date":"1/1/2015",
-    "articleName":"dart",
-    "imagePath":"assets/projectimg/dart_icon.png",
-    "state":"Released"
   }
 ]
